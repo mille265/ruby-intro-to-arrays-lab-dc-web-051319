@@ -2,13 +2,13 @@ require './lib/intro_to_arrays.rb'
 describe "working with arrays" do
 
   context 'instantiating' do
-    describe "#instantiate_new_array" do
+    describe "#instaniate_new_array" do
       #the variables that begin with the '@' symbol are called instance variables.
       #We'll learn more about them when we get to object orientation.
       #For now, just know that creating an instance variable inside our describe block
       #means we can access that variable anywhere inside the block.
       before(:each) do
-        @my_new_array = instantiate_new_array
+        @my_new_array = instaniate_new_array
       end
 
       it "creates a new array and returns it" do
@@ -38,7 +38,7 @@ describe "working with arrays" do
   end
 
   context 'indexing' do
-    before(:each) do
+    before(:all) do
       @taylor_swift = ["Welcome to New York", "Blank Space", "Style", "Out of The Woods"]
     end
 
@@ -65,7 +65,7 @@ describe "working with arrays" do
   end
 
   context 'using ruby array methods to return values from an array' do
-    before(:each) do
+    before(:all) do
       @south_east_asia = ["Thailand", "Cambodia", "Singapore", "Myanmar"]
     end
 
@@ -85,7 +85,7 @@ describe "working with arrays" do
   end
 
   context 'using ruby array methods to get information about an array' do
-    before(:each) do
+    before(:all) do
       @programming_languages = ["Ruby", "Javascript", "Python", "C++", "Java", "Lisp", "PHP", "Clojure"]
     end
 
@@ -96,6 +96,5 @@ describe "working with arrays" do
       end
     end
   end
-
 
 end
